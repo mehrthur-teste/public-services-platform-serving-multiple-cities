@@ -4,12 +4,14 @@ Group 3 working report for MCAI510 Take Home Assignment 1.
 
 ## Report and section guides
 
-- [Word report — Parts 1, 2, 3, 5, 6, 7 and 8](<MCAI510 THA1 Group3 Report.docx>)
+- [Word report — Parts 1–8](<MCAI510 THA1 Group3 Report.docx>)
 - [Parts 1 and 2 — Markdown review copy](docs/report-draft.md)
 - [Part 3 — native database scripts and execution instructions](part3/README.md)
 - [Part 3 — storage and retrieval table, justification and CRUD examples](part3/part3-section.md)
 - [Part 3 — validation scope and results](part3/VALIDATION.md)
 - [Part 3 — download the eight database scripts](part3/Part_3_Database_Scripts.zip)
+- [Part 4 — indexing strategies guide](part4/README.md)
+- [Part 4 — eight scenarios and retrieval queries](part4/part4-section.md)
 - [Part 5 — trade-off evaluation guide](part5/README.md)
 - [Part 5 — comparative table, justification and references](part5/part5-section.md)
 - [Part 6 — specialised database models guide](part6/README.md)
@@ -38,8 +40,7 @@ exported figures remain in `docs/figures`.
 
 ## Remaining group work
 
-Task 4 is assigned to another group member and remains the only unfinished
-numbered task. The Conclusion, contribution and AI usage statement, and final PDF
-submission still need completion. Confirm the Part 5 discussion stays consistent with the final Part 4
-index recommendations. Database syntax checks are documented separately from
+All eight numbered tasks are now included. The Conclusion is included. The contribution and AI usage statement and final PDF
+submission still need completion. Part 4 integrates
+the group member’s eight operational indexing scenarios and retrieval queries. Database syntax checks are documented separately from
 server-side execution; complete integration runs have not been claimed.

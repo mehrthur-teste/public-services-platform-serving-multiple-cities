@@ -25,6 +25,21 @@ Multimedia separates large file contents from searchable metadata. S3 stores the
 
 Emergency response stores approved rule versions and links each alert to the exact version evaluated. An external service performs evaluation; unique evaluation keys prevent duplicate alerts. Historical planning instead loads shared dimensions before daily facts in a separate database. Idempotent upserts preserve each fact grain, reporting dates use one documented timezone, and environmental units remain explicit. This separation protects operational work from broad reporting scans. Native SQL and mongosh scripts demonstrate CRUD while retaining shared examples for later contexts. Retention periods, ingestion capacity and latency targets require stakeholder validation and workload measurements before production deployment.
 
+## Script Repository and Execution Order
+
+The eight executable scripts are published in the [project repository](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities), under [`part3/scripts`](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/tree/main/part3/scripts) on the `main` branch (mehrthur-teste, n.d.).
+
+| Order | Context | Executable script |
+| --- | --- | --- |
+| 01 | Locations | [01_road_and_facility_locations.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/01_road_and_facility_locations.sql) |
+| 02 | Multimedia | [02_multimedia.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/02_multimedia.sql) |
+| 03 | Transportation | [03_transportation_sensors.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/03_transportation_sensors.sql) |
+| 04 | Environment | [04_environmental_monitoring.js](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/04_environmental_monitoring.js) |
+| 05 | Citizen requests | [05_citizen_service_requests.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/05_citizen_service_requests.sql) |
+| 06 | Maintenance | [06_facility_maintenance.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/06_facility_maintenance.sql) |
+| 07 | Emergency response | [07_emergency_rules_and_response.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/07_emergency_rules_and_response.sql) |
+| 08 | Historical planning | [08_historical_planning.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/08_historical_planning.sql) |
+
 ## Road and Facility Locations
 
 PostGIS stores core geography; optional MongoDB attribute documents use the same UUID and are validated against SQL parents.
@@ -252,3 +267,7 @@ DELETE FROM historical_planning.fact_traffic_summary
 WHERE date_key=:date_key AND city_key=:city_key
  AND source_road_id=:road_id;
 ```
+
+## Repository Reference
+
+mehrthur-teste. (n.d.). *Public services platform serving multiple cities* [Source code]. GitHub. https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities

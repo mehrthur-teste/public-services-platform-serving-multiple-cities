@@ -5,6 +5,21 @@ These are **native database scripts**, with no Python runtime or drivers require
 sources. The MongoDB file also implements the optional road/facility attribute
 collections, so the package still has exactly eight numbered scripts.
 
+## Script Repository and Execution Order
+
+The eight executable scripts are published in the [project repository](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities), under [`part3/scripts`](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/tree/main/part3/scripts) on the `main` branch (mehrthur-teste, n.d.).
+
+| Order | Context | Executable script |
+| --- | --- | --- |
+| 01 | Locations | [01_road_and_facility_locations.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/01_road_and_facility_locations.sql) |
+| 02 | Multimedia | [02_multimedia.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/02_multimedia.sql) |
+| 03 | Transportation | [03_transportation_sensors.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/03_transportation_sensors.sql) |
+| 04 | Environment | [04_environmental_monitoring.js](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/04_environmental_monitoring.js) |
+| 05 | Citizen requests | [05_citizen_service_requests.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/05_citizen_service_requests.sql) |
+| 06 | Maintenance | [06_facility_maintenance.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/06_facility_maintenance.sql) |
+| 07 | Emergency response | [07_emergency_rules_and_response.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/07_emergency_rules_and_response.sql) |
+| 08 | Historical planning | [08_historical_planning.sql](https://github.com/mehrthur-teste/public-services-platform-serving-multiple-cities/blob/main/part3/scripts/08_historical_planning.sql) |
+
 ## Run in order
 
 Use PostgreSQL 16+ with PostGIS 3.5 and MongoDB 8.0+. Start in the **project root**:

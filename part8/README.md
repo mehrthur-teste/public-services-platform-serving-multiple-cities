@@ -10,6 +10,6 @@ analytical layer: S3 for the data lake, Glue for catalogue and routine integrati
 EMR for heavier Spark processing, and Redshift for SQL reporting. New AWS sources
 are included in the report's unified References section.
 
-Task 4 still belongs to another group member; align its final indexing choices with
-this recommendation. The standalone Conclusion and other submission components
+Task 4 has been integrated with its operational indexing scenarios; its recommendations
+remain consistent with this final strategy. The report includes a standalone Conclusion after Part 8. Other submission components
 remain separate from Task 8. No measured benchmark or deployment result is claimed.

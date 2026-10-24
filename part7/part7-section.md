@@ -15,9 +15,9 @@
 
 We compare eight paradigms because the platform combines accountable transactions, specialised information, historical reporting and continuous observations. They address different responsibilities and can coexist within one architecture. The recommendation retains the Part 2 technologies and distinguishes data storage models from processing approaches. Effectiveness depends on access patterns and consistency needs, rather than using one system for every workload (Kleppmann, 2017).
 
-Relational processing remains central to requests, maintenance and operational histories. Keys and transactions support related updates, such as changing a request status together with its history (PostgreSQL Global Development Group, n.d.-a, n.d.-d). This fits mixed operational workloads, but long regional aggregations can compete with service activity. Spatial processing complements this model: PostGIS supports geographic relationships and index-aware searches (PostGIS Project, n.d.). Nearby-facility and zone-intersection queries benefit, whereas ordinary status lookups still depend on conventional relational indexes.
+Relational processing remains central to requests, maintenance and operational histories. Keys and transactions support related updates, such as changing a request status together with its history (PostgreSQL Global Development Group, n.d.-a, n.d.-f). This fits mixed operational workloads, but long regional aggregations can compete with service activity. Spatial processing complements this model: PostGIS supports geographic relationships and index-aware searches (PostGIS Project, n.d.-a). Nearby-facility and zone-intersection queries benefit, whereas ordinary status lookups still depend on conventional relational indexes.
 
-Document processing suits heterogeneous environmental device configurations and observed events. Retrieving a device and its nested settings can be straightforward, but links to PostgreSQL cities and facilities still need application validation. We therefore keep this scope bounded. Time-series processing addresses a separate concern: repeated observations identified by device and timestamp. Environmental readings use MongoDB time-series collections; transportation retains indexed PostgreSQL temporal tables. This supports append-heavy ingestion and period queries, while update restrictions, late arrivals and duplicate delivery complicate corrections (MongoDB, Inc., n.d.-a, n.d.-b).
+Document processing suits heterogeneous environmental device configurations and observed events. Retrieving a device and its nested settings can be straightforward, but links to PostgreSQL cities and facilities still need application validation. We therefore keep this scope bounded. Time-series processing addresses a separate concern: repeated observations identified by device and timestamp. Environmental readings use MongoDB time-series collections; transportation retains indexed PostgreSQL temporal tables. This supports append-heavy ingestion and period queries, while update restrictions, late arrivals and duplicate delivery complicate corrections (MongoDB, Inc., n.d.-b, n.d.-c).
 
 Multimedia management separates object contents from structured metadata. S3 supports file storage and retrieval, while PostgreSQL links evidence to business records (Amazon Web Services, n.d.-d). This suits uploads, downloads and metadata searches, but does not itself provide semantic image search. Independent file and catalogue failures require verification and reconciliation. Its responsibility differs from the relational store even though both participate in one evidence workflow.
 
@@ -37,12 +37,12 @@ Kimball, R., & Ross, M. (2013). *The data warehouse toolkit: The definitive guid
 
 Kleppmann, M. (2017). *Designing data-intensive applications: The big ideas behind reliable, scalable, and maintainable systems*. O’Reilly Media.
 
-MongoDB, Inc. (n.d.-a). [*Time series*](https://www.mongodb.com/docs/v8.0/core/timeseries-collections/).
+MongoDB, Inc. (n.d.-b). [*Time series*](https://www.mongodb.com/docs/v8.0/core/timeseries-collections/).
 
-MongoDB, Inc. (n.d.-b). [*Time series collection limitations*](https://www.mongodb.com/docs/v8.0/core/timeseries/timeseries-limitations/).
+MongoDB, Inc. (n.d.-c). [*Time series collection limitations*](https://www.mongodb.com/docs/v8.0/core/timeseries/timeseries-limitations/).
 
-PostGIS Project. (n.d.). [*How do I use spatial indexes?*](https://postgis.net/documentation/faq/spatial-indexes/).
+PostGIS Project. (n.d.-a). [*How do I use spatial indexes?*](https://postgis.net/documentation/faq/spatial-indexes/).
 
 PostgreSQL Global Development Group. (n.d.-a). [*Constraints*](https://www.postgresql.org/docs/16/ddl-constraints.html). PostgreSQL 16 documentation.
 
-PostgreSQL Global Development Group. (n.d.-d). [*Transactions*](https://www.postgresql.org/docs/16/tutorial-transactions.html). PostgreSQL 16 documentation.
+PostgreSQL Global Development Group. (n.d.-f). [*Transactions*](https://www.postgresql.org/docs/16/tutorial-transactions.html). PostgreSQL 16 documentation.
