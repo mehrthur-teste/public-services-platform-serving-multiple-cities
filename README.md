@@ -1,12 +1,45 @@
 # Smart Regional Services Platform
 
-Group 3 draft for MCAI510 Take Home Assignment 1.
+Group 3 working report for MCAI510 Take Home Assignment 1.
 
-- [Download the Word draft](MCAI510_THA1_Group3_Report_Parts_1_2_Completed.docx)
-- [Read and review the draft](docs/report-draft.md)
+## Report and section guides
 
-The draft includes the requirements analysis and overall architecture recommendation for Tasks 1 and 2, plus supporting workflows, data dictionaries, and entity relationship diagrams. Tasks 3 through 8 remain to be completed.
+- [Word report — Parts 1, 2, 3, 5, 6, 7 and 8](<MCAI510 THA1 Group3 Report.docx>)
+- [Parts 1 and 2 — Markdown review copy](docs/report-draft.md)
+- [Part 3 — native database scripts and execution instructions](part3/README.md)
+- [Part 3 — storage and retrieval table, justification and CRUD examples](part3/part3-section.md)
+- [Part 3 — validation scope and results](part3/VALIDATION.md)
+- [Part 3 — download the eight database scripts](part3/Part_3_Database_Scripts.zip)
+- [Part 5 — trade-off evaluation guide](part5/README.md)
+- [Part 5 — comparative table, justification and references](part5/part5-section.md)
+- [Part 6 — specialised database models guide](part6/README.md)
+- [Part 6 — seven-category table, justification and references](part6/part6-section.md)
+- [Part 7 — processing paradigms guide](part7/README.md)
+- [Part 7 — eight-paradigm comparison and explanation](part7/part7-section.md)
+- [Part 8 — final strategy recommendation guide](part8/README.md)
+- [Part 8 — final recommendation and implementation priorities](part8/part8-section.md)
 
-Use the Markdown version for line comments in the pull request. The Word file is the reference for document formatting, and the exported figures are stored in `docs/figures`.
+The report contains requirements analysis, the architecture recommendation,
+storage and retrieval strategies, the evaluation of storage/indexing trade-offs,
+specialised database model recommendations, and a comparison of contemporary
+data processing paradigms. Part 8 brings these decisions together in the final
+database strategy recommendation, refining the analytical layer to S3, AWS Glue,
+Amazon EMR and Amazon Redshift.
+Part 3 supplies seven PostgreSQL SQL scripts and one native MongoDB script.
+Part 5 compares relational PostgreSQL/PostGIS, MongoDB time-series collections,
+and S3 multimedia files with PostgreSQL metadata. Part 6 explains specialised
+approaches for all seven categories in the assignment. Part 7 compares all eight
+listed paradigms and assigns each one a defined architectural role. Part 8 sets
+priorities, identifies the two main trade-offs and outlines a phased rollout.
 
-This is a working draft. The group still needs to complete the remaining tasks, final APA formatting, the contribution and AI usage statement, and the required PDF submission.
+The Word file controls document formatting. Use the section Markdown files for
+review comments. The Markdown copy under `docs/` covers Parts 1 and 2 only;
+exported figures remain in `docs/figures`.
+
+## Remaining group work
+
+Task 4 is assigned to another group member and remains the only unfinished
+numbered task. The Conclusion, contribution and AI usage statement, and final PDF
+submission still need completion. Confirm the Part 5 discussion stays consistent with the final Part 4
+index recommendations. Database syntax checks are documented separately from
+server-side execution; complete integration runs have not been claimed.

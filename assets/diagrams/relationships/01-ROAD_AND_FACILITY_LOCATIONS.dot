@@ -1,0 +1,16 @@
+digraph ERD {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.25", ranksep="0.35", splines=spline, outputorder=edgesfirst];
+node [shape=plain, fontname="Arial", fontsize=14];
+edge [fontname="Arial", fontsize=12, labelfontsize=12, labeldistance=2.2, penwidth=1.3];
+"cities" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>cities</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">PK</FONT></TD><TD PORT="city_id" ALIGN="LEFT">city_id</TD></TR></TABLE>>];
+"roads" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>roads</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">PK</FONT></TD><TD PORT="road_id" ALIGN="LEFT">road_id</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">FK</FONT></TD><TD PORT="city_id" ALIGN="LEFT">city_id</TD></TR></TABLE>>];
+"facilities" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>facilities</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">PK</FONT></TD><TD PORT="facility_id" ALIGN="LEFT">facility_id</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">FK</FONT></TD><TD PORT="city_id" ALIGN="LEFT">city_id</TD></TR></TABLE>>];
+"service_zones" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>service_zones</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">PK</FONT></TD><TD PORT="zone_id" ALIGN="LEFT">zone_id</TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">FK</FONT></TD><TD PORT="city_id" ALIGN="LEFT">city_id</TD></TR></TABLE>>];
+"road_attributes" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>road_attributes</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">ID / REF</FONT></TD><TD PORT="_id" ALIGN="LEFT">_id</TD></TR></TABLE>>];
+"facility_attributes" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#6E8599"><TR><TD COLSPAN="2" BGCOLOR="#173D5D"><FONT COLOR="white"><B>facility_attributes</B></FONT></TD></TR><TR><TD ALIGN="LEFT"><FONT COLOR="#35516A">ID / REF</FONT></TD><TD PORT="_id" ALIGN="LEFT">_id</TD></TR></TABLE>>];
+"cities" -> "roads" [arrowhead=normal, arrowsize=0.55, label="1 : 0..N", color="#294E6C", style="solid"];
+"cities" -> "facilities" [arrowhead=normal, arrowsize=0.55, label="1 : 0..N", color="#294E6C", style="solid"];
+"cities" -> "service_zones" [arrowhead=normal, arrowsize=0.55, label="1 : 0..N", color="#294E6C", style="solid"];
+"roads" -> "road_attributes" [arrowhead=normal, arrowsize=0.55, label="1 : 0..1", color="#77818B", style="dashed"];
+"facilities" -> "facility_attributes" [arrowhead=normal, arrowsize=0.55, label="1 : 0..1", color="#77818B", style="dashed"];
+}
