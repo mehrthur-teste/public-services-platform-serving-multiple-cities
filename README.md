@@ -4,7 +4,8 @@ Group 3 working report for MCAI510 Take Home Assignment 1.
 
 ## Report and section guides
 
-- [Word report — Parts 1–8](<MCAI510 THA1 Group3 Report.docx>)
+- [Word report — Parts 1–8](MCAI510_THA1_Group3_Report.docx)
+- [Final PDF report](MCAI510_THA1_Group3_Report.pdf)
 - [Parts 1 and 2 — Markdown review copy](docs/report-draft.md)
 - [Part 3 — native database scripts and execution instructions](part3/README.md)
 - [Part 3 — storage and retrieval table, justification and CRUD examples](part3/part3-section.md)
@@ -40,7 +41,17 @@ exported figures remain in `docs/figures`.
 
 ## Remaining group work
 
-All eight numbered tasks are now included. The Conclusion is included. The contribution and AI usage statement and final PDF
-submission still need completion. Part 4 integrates
+All eight numbered tasks, the Conclusion, group contribution and AI usage statements,
+and student IDs are included. The final PDF is available above. Part 4 integrates
 the group member’s eight operational indexing scenarios and retrieval queries. Database syntax checks are documented separately from
 server-side execution; complete integration runs have not been claimed.
+
+## Report appendices
+
+The main report retains all eight tasks and their required tables and justifications.
+Technical material follows References: Appendix A contains workflows, schemas and
+data dictionaries; Appendix B contains relationship diagrams; Appendix C contains
+implementation instructions, the linked scripts table and CRUD; Appendix D contains
+the eight complete indexing retrieval queries. Internal links point to numbered
+sections, tables and figures. Detailed schemas, diagrams and database examples are
+retained in the appendices; selected main-text explanations have been condensed.

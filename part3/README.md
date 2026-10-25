@@ -117,3 +117,5 @@ MongoDB database names are explicit in script 04.
 - [PostGIS ST_DWithin](https://postgis.net/docs/ST_DWithin.html)
 
 See [VALIDATION.md](VALIDATION.md) for actual test coverage and results.
+
+The report places execution instructions and the linked script table in Appendix C, Table C1; its CRUD examples are in Sections C.1–C.8.

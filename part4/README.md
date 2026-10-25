@@ -13,3 +13,5 @@ with citation suffixes reconciled across all sections. The Part 8 AWS analytics
 recommendation remains separate from these operational indexing scenarios.
 
 Part 4 uses double line spacing throughout, including its table and retrieval queries.
+
+The report retains the indexing comparison in Part 4 and places complete retrieval queries in Appendix D, Sections D.1–D.8.
