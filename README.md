@@ -4,8 +4,7 @@ Group 3 working report for MCAI510 Take Home Assignment 1.
 
 ## Report and section guides
 
-- [Word report — Parts 1–8](MCAI510_THA1_Group3_Report.docx)
-- [Final PDF report](MCAI510_THA1_Group3_Report.pdf)
+- [Final PDF report — Parts 1–8](MCAI510_THA1_Group3_Report.docx.pdf)
 - [Parts 1 and 2 — Markdown review copy](docs/report-draft.md)
 - [Part 3 — native database scripts and execution instructions](part3/README.md)
 - [Part 3 — storage and retrieval table, justification and CRUD examples](part3/part3-section.md)
